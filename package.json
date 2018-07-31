@@ -1,5 +1,9 @@
 {
   "name": "wp-portal",
   "version": "0.0.1",
-  "license": "All rights reserved"
+  "license": "All rights reserved",
+  "devDependencies": {
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  }
 }
