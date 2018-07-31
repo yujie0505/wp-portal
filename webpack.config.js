@@ -6,11 +6,11 @@ const webpack = require('webpack')
 module.exports = {
   devServer: {
     allowedHosts: ['merry.ee.ncku.edu.tw', 'zoro.ee.ncku.edu.tw'],
-    contentBase: './app/res/',
+    contentBase: './src/res/',
     host: '0.0.0.0',
     stats: { colors: true, chunkModules: false },
   },
-  entry: { app: './app/app.js' },
+  entry: { app: './src/app.js' },
   module: {
     rules: [
       { test: /\.css$/, use: extractTextWebpackPlugin.extract({
