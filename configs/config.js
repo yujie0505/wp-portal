@@ -22,7 +22,7 @@ const config = {
   entryFilterOptions: {},
   dev: {
     // Various Dev Server settings
-    contentBase: ROOT,
+    contentBase: [ROOT, path.resolve(__dirname, '../src/res/')],
     host: ip,
     port: 8081,
     historyApiFallback: true,
