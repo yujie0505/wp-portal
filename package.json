@@ -2,7 +2,7 @@
   "name": "wp-portal",
   "version": "0.0.1",
   "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server --port $(/bin/cat port || /bin/echo 8080)"
+    "start": "webpack-dev-server --port $(/bin/cat port || /bin/echo 8080)"
   },
   "license": "All rights reserved",
   "dependencies": {
