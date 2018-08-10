@@ -50,7 +50,19 @@ module.exports = {
     entry: { index: path.resolve(__dirname, '../src/entry.weex.js') },
     module: {
       rules: moduleRules.slice().concat([
-        { test: /\.vue$/, use: 'weex-loader' }
+        {
+          test: /\.vue$/, use: {
+            loader: 'weex-loader',
+            options: {
+              loaders: {
+                sass: [{
+                  loader: 'sass-loader',
+                  options: { indentedSyntax: true }
+                }]
+              }
+            }
+          }
+        }
       ])
     },
     output: {
