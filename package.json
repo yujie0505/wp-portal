@@ -22,7 +22,7 @@
     "file-loader": "^0.9.0",
     "friendly-errors-webpack-plugin": "^1.7.0",
     "html-loader": "^0.4.4",
-    "node-sass": "^4.9.1",
+    "node-sass": "^4.13.1",
     "postcss-loader": "^1.2.1",
     "postcss-plugin-px2rem": "^0.7.0",
     "postcss-plugin-weex": "^0.1.6",
